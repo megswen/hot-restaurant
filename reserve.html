@@ -77,5 +77,18 @@
 
 	</div>
 
+	
 </body>
 </html>
+
+<script>
+	$(".submit").on("click", function(event) {
+	event.preventDefault();
+	var newReservation = {
+		Name: $("#reserve_name").val().trim(),
+		Phone Number: $("#reserve_phone").val().trim(),
+		Email: $("#reserve_email").val().trim(),
+		Unique ID: $("#reserve_uniqueID").val().trim()
+	}
+	});
+</script>
